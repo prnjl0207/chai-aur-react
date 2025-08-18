@@ -1,8 +1,1 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* optional: sandbox-friendly reset tweaks */
-:root {
-  color-scheme: light dark;
-}
+@import "tailwindcss";
