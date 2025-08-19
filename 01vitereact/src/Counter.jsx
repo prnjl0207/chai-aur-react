@@ -6,7 +6,7 @@ const Counter = () => {
     // to set max value of 20
     if (counter >= 20) {
       console.log("max count limit reached!!!");
-      setCounter((counter = 20));
+      setCounter(20);
     } else {
       setCounter(counter + 1);
     }
@@ -27,7 +27,7 @@ const Counter = () => {
     // to set min value of 0
     if (counter <= 0) {
       console.log("min count limit reached!!!");
-      setCounter((counter = 0));
+      setCounter(0);
     } else {
       setCounter(counter - 1);
     }
@@ -35,8 +35,15 @@ const Counter = () => {
   return (
     <>
       <h4>Current counter value is : {counter}</h4>
-      <button onClick={increaseCounter}>Increase Counter</button>
-      <button onClick={decreaseCounter}>Decrease Counter</button>
+      <button
+        onClick={increaseCounter}
+        className="bg-gray-600 rounded-2xl p-1 mr-1"
+      >
+        Increase Counter
+      </button>
+      <button onClick={decreaseCounter} className="bg-gray-600 rounded-2xl p-1">
+        Decrease Counter
+      </button>
     </>
   );
 };
