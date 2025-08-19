@@ -1,16 +1,11 @@
-import BgChanger from "./BgChanger";
-import Chai from "./Chai";
-import Counter from "./Counter";
-import Password from "./Password";
+import { Outlet } from "react-router";
 
 function App() {
   return (
     <>
-      {/* <h1>Hello vite react | Pranjal Verma</h1>
-      <Chai name="Pranjal" surname="Verma" />
-      <Counter /> */}
-      {/* <BgChanger /> */}
-      <Password />
+      <h4>I am header</h4>
+      <Outlet />
+      <h4>I am footer</h4>
     </>
   );
 }
