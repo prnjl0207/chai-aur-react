@@ -12,6 +12,7 @@ import BgChanger from "./BgChanger.jsx";
 import Counter from "./Counter.jsx";
 import Chai from "./Chai.jsx";
 import Password from "./Password.jsx";
+import Pagination from "./Pagination.jsx";
 
 // const router = createBrowserRouter([
 //   {
@@ -45,6 +46,7 @@ const router = createBrowserRouter(
       <Route path="bgchanger" element={<BgChanger />}></Route>
       <Route path="counter" element={<Counter />}></Route>
       <Route path="password" element={<Password />}></Route>
+      <Route path="pagination" element={<Pagination />}></Route>
     </Route>
   )
 );
